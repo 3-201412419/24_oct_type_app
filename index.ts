@@ -69,3 +69,4 @@ let 학교  : {
 학교.friend = ['Lee', 학교.teacher]
 
 console.log('ggg');
+asdasd
