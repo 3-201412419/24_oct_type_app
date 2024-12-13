@@ -6,12 +6,14 @@
   "scripts": {
     "build": "tsc",
     "start": "node index.js",
-    "dev": "ts-node index.ts"
+    "dev": "ts-node index.ts",
+    "watch": "node auto-commit.js"
   },
   "dependencies": {
     "typescript": "^5.0.0"
   },
   "devDependencies": {
+    "chokidar": "^3.5.3",
     "ts-node": "^10.9.1",
     "@types/node": "^18.0.0"
   }
