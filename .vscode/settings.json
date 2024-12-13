@@ -1,7 +1,4 @@
 {
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 1000,
-    "git-add-and-commit.commitMessage": "Auto commit: ${file}",
-    "git-add-and-commit.stageAll": true,
-    "git-add-and-commit.pushAfterCommit": true
+    "files.autoSaveDelay": 1000
 }

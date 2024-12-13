@@ -47,4 +47,4 @@ var 학교 = {
 };
 학교.score[4] = false;
 학교.friend = ['Lee', 학교.teacher];
-console.log(학교, 철수);
+console.log(학교, 철수, user);
