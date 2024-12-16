@@ -107,4 +107,3 @@ let person : Me = {
     age : true
 }
 
-function rock (a : '')
