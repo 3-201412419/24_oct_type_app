@@ -70,4 +70,6 @@ var person = {
     email: 'im@naver',
     age: true
 };
-return [];
+function game(a) {
+    return [];
+}
