@@ -67,4 +67,6 @@ console.log(subjects(A_teacher));
 var person = {
     name: 'kim',
     phone: 132,
+    email: 'im@naver',
+    age: true
 };

@@ -103,5 +103,6 @@ type Me = {name : string , phone : number , email : string, age : boolean}
 let person : Me = {
     name : 'kim',
     phone : 132,
-    
+    email : 'im@naver',
+    age : true
 }
