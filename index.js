@@ -65,5 +65,6 @@ function subjects(type) {
 }
 console.log(subjects(A_teacher));
 var person = {
-    name: 
+    name: 'kim',
+    phone: 132,
 };
