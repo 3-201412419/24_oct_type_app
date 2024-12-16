@@ -64,7 +64,3 @@ function subjects(type) {
     }
 }
 console.log(subjects(A_teacher));
-var person = {
-    name: 'kim',
-    age: 30
-};
