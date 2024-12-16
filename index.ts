@@ -110,5 +110,3 @@ let person : Me = {
  function game(a : '가위' | '바위' | '보') : string[] {
 
  }
-game()
- 

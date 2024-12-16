@@ -72,4 +72,3 @@ var person = {
 };
 function game(a) {
 }
-game();
