@@ -97,4 +97,4 @@ function subjects(type : {subject : string } | {subject : string[]}){
 
 console.log(subjects(A_teacher));
 
-type Paint  = { color? : string , size : number , readonly }
+type Paint  = { color? : string , size : number , readonly position : }
