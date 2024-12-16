@@ -64,3 +64,4 @@ function subjects(type) {
     }
 }
 console.log(subjects(A_teacher));
+var person = {};
