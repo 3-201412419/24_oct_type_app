@@ -98,4 +98,4 @@ function subjects(type : {subject : string } | {subject : string[]}){
 console.log(subjects(A_teacher));
 
 type Paint  = { color? : string , size : number , readonly position : number[]}
-type Me = {name : string , }
+type Me = {name : string , phone : number , email : string}
