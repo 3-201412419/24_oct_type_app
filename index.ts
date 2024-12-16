@@ -102,4 +102,4 @@ type You = {name : string , age :number};
 
 type Person = Me & You;
 
-let 
+let person 
