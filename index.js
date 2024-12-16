@@ -74,3 +74,8 @@ function game(a) {
     return ['가위'];
 }
 game('가위');
+var 자료 = {
+    name: 'kim'
+};
+function 내함수(a) {
+}

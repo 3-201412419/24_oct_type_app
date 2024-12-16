@@ -15,25 +15,40 @@ const watcher = chokidar.watch('.', {
 
 // Function to execute git commands
 function executeGitCommands() {
-    exec('git add .', (error) => {
+    // 먼저 변경사항이 있는지 확인
+    exec('git status --porcelain', (error, stdout, stderr) => {
         if (error) {
-            console.error(`Error staging files: ${error}`);
+            console.error(`Error checking git status: ${error}`);
             return;
         }
-        
-        const commitMessage = `Auto commit: ${new Date().toISOString()}`;
-        exec(`git commit -m "${commitMessage}"`, (error) => {
+
+        // 변경사항이 없으면 종료
+        if (!stdout.trim()) {
+            console.log('No changes to commit');
+            return;
+        }
+
+        // 변경사항이 있을 때만 커밋 진행
+        exec('git add .', (error) => {
             if (error) {
-                console.error(`Error committing: ${error}`);
+                console.error(`Error staging files: ${error}`);
                 return;
             }
             
-            exec('git push', (error) => {
+            const commitMessage = `Auto commit: ${new Date().toISOString()}`;
+            exec(`git commit -m "${commitMessage}"`, (error) => {
                 if (error) {
-                    console.error(`Error pushing: ${error}`);
+                    console.error(`Error committing: ${error}`);
                     return;
                 }
-                console.log('Changes committed and pushed successfully!');
+                
+                exec('git push', (error) => {
+                    if (error) {
+                        console.error(`Error pushing: ${error}`);
+                        return;
+                    }
+                    console.log('Changes committed and pushed successfully!');
+                });
             });
         });
     });
