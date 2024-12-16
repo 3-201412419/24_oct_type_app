@@ -106,3 +106,5 @@ let person : Me = {
     email : 'im@naver',
     age : true
 }
+
+function rock 

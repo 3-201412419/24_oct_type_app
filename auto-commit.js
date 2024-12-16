@@ -49,7 +49,7 @@ watcher
             clearTimeout(timeout);
         }
         // Set new timeout
-        timeout = setTimeout(executeGitCommands, 1000); // Wait 1 second after last change
+        timeout = setTimeout(executeGitCommands, 60000); // Wait 1 second after last change
     })
     .on('ready', () => console.log('Initial scan complete. Ready for changes...'));
 
