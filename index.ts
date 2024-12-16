@@ -107,4 +107,4 @@ let person : Me = {
     age : true
 }
 
-function rock ()
+function rock (a : )
