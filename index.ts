@@ -110,5 +110,5 @@ let person : Me = {
  function game() : {
 
  }
-
+game()
  
