@@ -104,5 +104,5 @@ type Person = Me & You;
 
 let person : Person = {
     name : 'kim',
-    
+    age : 30
 }
