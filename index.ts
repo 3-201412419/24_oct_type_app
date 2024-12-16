@@ -107,4 +107,4 @@ let person : Me = {
     age : true
 }
 
- function 함수(a : )
+ function 함수(a : '가우ㅏ')
