@@ -70,4 +70,3 @@ var person = {
     email: 'im@naver',
     age: true
 };
-함수();
