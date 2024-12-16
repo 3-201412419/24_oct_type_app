@@ -102,4 +102,7 @@ type You = {name : string , age :number};
 
 type Person = Me & You;
 
-let person 
+let person : Person = {
+    name : 'kim',
+    
+}
