@@ -101,3 +101,5 @@ type Me = {name : string , age : number};
 type You = {name : string , age :number};
 
 type Person = Me & You;
+
+let 
