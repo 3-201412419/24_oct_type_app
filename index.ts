@@ -82,6 +82,9 @@ function cleaning(arr :(number | string)[]){
 
 
 let A_teacher  = {subject : 'math'}
+/** 
+ * Represents a teacher with multiple subjects.
+ * 
 let B_teacher  = {subject : ['science', 'english']}
 let C_teacher  = {subject : ['science', 'art', 'korean']}
 

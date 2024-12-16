@@ -53,14 +53,21 @@ function cleaning(arr) {
     return numbers;
 }
 var A_teacher = { subject: 'math' };
-var B_teacher = { subject: ['science', 'english'] };
-var C_teacher = { subject: ['science', 'art', 'korean'] };
-function subjects(type) {
-    if (Array.isArray(type.subject)) {
-        return type.subject.at(-1);
-    }
-    else {
-        return type.subject;
-    }
+/**
+ * Represents a teacher with multiple subjects.
+ *
+let B_teacher  = {subject : ['science', 'english']}
+let C_teacher  = {subject : ['science', 'art', 'korean']}
+
+function subjects(type : {subject : string } | {subject : string[]}){
+
+  if(Array.isArray(type.subject)){
+    return type.subject.at(-1);
+  }else{
+    return type.subject
+  }
+
 }
+
 console.log(subjects(A_teacher));
+ 
