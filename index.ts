@@ -101,5 +101,5 @@ type Paint  = { color? : string , size : number , readonly position : number[]}
 type Me = {name : string , phone : number , email : string}
 
 let person : Me = {
-    
+    name : 
 }
