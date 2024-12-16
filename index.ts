@@ -100,3 +100,4 @@ console.log(subjects(A_teacher));
 type Me = {name : string , age : number};
 type You = {name : string , age :number};
 
+type Person 
