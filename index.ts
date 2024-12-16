@@ -107,4 +107,6 @@ let person : Me = {
     age : true
 }
 
- function 함수(a : '가위' | '바위' | '보') : 
+ function 함수(a : '가위' | '바위' | '보') : {
+    
+ }
