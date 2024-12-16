@@ -107,7 +107,7 @@ let person : Me = {
     age : true
 }
 
- function game() : {
+ function game(a : '가위' ) : {
 
  }
 game()
