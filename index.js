@@ -73,4 +73,4 @@ var person = {
 function game(a) {
     return ['가위'];
 }
-함수('가위');
+game('가위');
