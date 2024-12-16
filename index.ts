@@ -98,4 +98,5 @@ function subjects(type : {subject : string } | {subject : string[]}){
 console.log(subjects(A_teacher));
 
 type Me = {name : string , age : number};
-type You = {name}
+type You = {name : string , age :number};
+
