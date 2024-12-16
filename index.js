@@ -71,4 +71,5 @@ var person = {
     age: true
 };
 function game(a) {
+    return;
 }
