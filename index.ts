@@ -69,3 +69,30 @@ let 학교  : {
 학교.friend = ['Lee', 학교.teacher]
 
 
+
+
+function cleaning(arr :(number | string)[]){
+
+    let numbers : number[] = [];
+
+    numbers = arr.map(x => typeof x === 'string' ? Number(x) : x);
+
+    return numbers;
+}
+
+
+let A_teacher  = {subject : 'math'}
+let B_teacher  = {subject : ['science', 'english']}
+let C_teacher  = {subject : ['science', 'art', 'korean']}
+
+function subjects(type : {subject : string } | {subject : string[]}){
+
+  if(Array.isArray(type.subject)){
+    return type.subject.at(-1);
+  }else{
+    return type.subject
+  } 
+
+}
+
+console.log(subjects(A_teacher));

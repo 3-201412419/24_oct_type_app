@@ -47,4 +47,20 @@ var 학교 = {
 };
 학교.score[4] = false;
 학교.friend = ['Lee', 학교.teacher];
-console.log(학교, 철수, user);
+function cleaning(arr) {
+    var numbers = [];
+    numbers = arr.map(function (x) { return typeof x === 'string' ? Number(x) : x; });
+    return numbers;
+}
+var A_teacher = { subject: 'math' };
+var B_teacher = { subject: ['science', 'english'] };
+var C_teacher = { subject: ['science', 'art', 'korean'] };
+function subjects(type) {
+    if (Array.isArray(type.subject)) {
+        return type.subject.at(-1);
+    }
+    else {
+        return type.subject;
+    }
+}
+console.log(subjects(A_teacher));
