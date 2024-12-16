@@ -53,12 +53,7 @@ function cleaning(arr) {
     return numbers;
 }
 var A_teacher = { subject: 'math' };
-/**
- * Represents a teacher with multiple subjects.
- *
- * - `subject`: An array containing the subjects that the teacher can instruct.
- *   In this case, the teacher instructs in 'science' and 'english'.
- */ var B_teacher = { subject: ['science', 'english'] };
+var B_teacher = { subject: ['science', 'english'] };
 var C_teacher = { subject: ['science', 'art', 'korean'] };
 function subjects(type) {
     if (Array.isArray(type.subject)) {

@@ -82,12 +82,7 @@ function cleaning(arr :(number | string)[]){
 
 
 let A_teacher  = {subject : 'math'}
-/** 
- * Represents a teacher with multiple subjects.
- * 
- * - `subject`: An array containing the subjects that the teacher can instruct. 
- *   In this case, the teacher instructs in 'science' and 'english'.
- */let B_teacher  = {subject : ['science', 'english']}
+let B_teacher  = {subject : ['science', 'english']}
 let C_teacher  = {subject : ['science', 'art', 'korean']}
 
 function subjects(type : {subject : string } | {subject : string[]}){
